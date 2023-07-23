@@ -1,5 +1,4 @@
-import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
+import sass from 'gulp-dart-sass';
 import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
 
@@ -11,7 +10,7 @@ import postcss from 'gulp-postcss';
 import postcssAnimation from 'postcss-animation';
 import postcssFlexbugs from 'postcss-flexbugs-fixes';
 
-const sass = gulpSass(dartSass);
+// const sass = gulpSass(dartSass);
 
 export const scss = () => {
   return (
