@@ -1,8 +1,8 @@
 {
   'syntax': 'scss',
-  'extends': ['stylelint-config-standard-scss', 'stylelint-config-prettier'],
+  'extends': ['stylelint-config-standard-scss'],
   'plugins':
-    ['stylelint-selector-bem-pattern', 'stylelint-order', 'stylelint-prettier'],
+    ['stylelint-selector-bem-pattern', 'stylelint-order'],
   'rules': {
       # Проверка совпадения селектора и имени файла, БЭМ-ошибок
       # https://github.com/postcss/postcss-bem-linter#custom-patterns
