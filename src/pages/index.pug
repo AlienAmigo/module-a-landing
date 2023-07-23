@@ -9,7 +9,15 @@ block meta
 //-   link(rel='stylesheet', href='css/some.css')
 
 block content
-  h1 Заголовок
+  section.main-top
+    .main-top__text-wrapper
+      h1.main-top__title Модуль А
+      p.main-top__text Приложение для управления проектами, для организации работы коллективов территориально распределенных сотрудников.
+      button.download-btn(type='button') Скачать приложение
+
+  section.main-bottom
+    p.main-bottom__text Загрузите приложение сейчас и получите преимущества
+    button.download-btn.download-btn--bottom(type='button') Скачать приложение
 
 //- block footer
 //-   p footer
