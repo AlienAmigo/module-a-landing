@@ -30,7 +30,10 @@
 
 @media screen and (min-width: $screen-xs) {
   .header {
-    flex-direction: row;
-    justify-content: space-between;
+
+    &__help {
+      margin-left: unset;
+      font-size: 1rem;
+    }
   }
 }
