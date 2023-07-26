@@ -1,0 +1,31 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__img-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+    background-color: $main-color;
+
+    picture {
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xs) {
+  .feature {
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .feature {
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .feature {
+  }
+}

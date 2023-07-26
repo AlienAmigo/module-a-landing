@@ -9,18 +9,25 @@ block meta
 //-   link(rel='stylesheet', href='css/some.css')
 
 block content
-  section.main-top
-    .main-top__text-wrapper
-      h1.main-top__title= appTitle
-      p.main-top__text Приложение для управления проектами, для организации работы коллективов территориально распределенных сотрудников.
-      button.download-btn(type='button') Скачать приложение
+  include ../pug/blocks/main-top.pug
 
-  section.main-bottom
-    p.main-bottom__text Загрузите приложение сейчас и получите преимущества
-    button.download-btn.download-btn--bottom(type='button') Скачать приложение
+  section.features
+    each item in FeaturesData
+      .feature
+        .feature__img-block
+          picture.feature__picture
+            source(srcset=`${item.img.xs}`, media='(min-width: 0)')
+            source(srcset=`${item.img.md}`, media='(min-width: 600px)')
+            source(srcset=`${item.img.lg}`, media='(min-width: 768px)')
+            source(srcset=`${item.img.xl}`, media='(min-width: 1024px)')
+            img.feature__img(src=`${item.img.lg}`, alt=`${item.title}`)
 
-//- block footer
-//-   p footer
+        .feature__text-block
+          .feature__text-wrapper
+            img.feature__ico(src=`${item.ico}`, alt=`${item.title}`)
+            h3.feature__title= item.title
+            ul.feature__list
+              each el in item.features
+                li.feature__item= el
 
-//- block append page-bottom
-//-   script(src='js/some.js')
+  include ../pug/blocks/main-bottom.pug
