@@ -12,16 +12,8 @@ block content
   include ../pug/blocks/main-top.pug
 
   section.features
-    each item in FeaturesData
+    each item, index in FeaturesData
       .feature
-        .feature__img-block
-          picture.feature__picture
-            source(srcset=`${item.img.xs}`, media='(min-width: 0)')
-            source(srcset=`${item.img.md}`, media='(min-width: 600px)')
-            source(srcset=`${item.img.lg}`, media='(min-width: 768px)')
-            source(srcset=`${item.img.xl}`, media='(min-width: 1024px)')
-            img.feature__img(src=`${item.img.lg}`, alt=`${item.title}`)
-
         .feature__text-block
           .feature__text-wrapper
             img.feature__ico(src=`${item.ico}`, alt=`${item.title}`)
@@ -29,5 +21,17 @@ block content
             ul.feature__list
               each el in item.features
                 li.feature__item= el
+
+        .feature__img-block(
+          class=`${index >= 2 ? 'feature__img-block--xs-align-bottom' : ''} ${index % 2 !== 1 ? 'feature__img-block--odd' : 'feature__img-block--even'}`)
+          picture.feature__picture
+            source(srcset=`${item.img.xl}`, media='(min-width: 1024px)')
+            source(srcset=`${item.img.lg}`, media='(min-width: 768px)')
+            source(srcset=`${item.img.md}`, media='(min-width: 600px)')
+            source(srcset=`${item.img.xs}`, media='(min-width: 0)')
+            img.feature__img(
+              src=`${item.img.xs}`,
+              alt=`${item.title}`,
+              loading='lazy')
 
   include ../pug/blocks/main-bottom.pug

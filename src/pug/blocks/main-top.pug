@@ -1,5 +1,16 @@
 section.main-top
-    .main-top__text-wrapper
+  .main-top__text-wrapper
+    .main-top__text-block
       h1.main-top__title= appTitle
       p.main-top__text Приложение для управления проектами, для организации работы коллективов территориально распределенных сотрудников.
       button.download-btn(type='button') Скачать приложение
+
+  .main-top__img-wrapper
+    picture.main-top__picture
+      source(media='(min-width: 1280px)', srcset='img/module-a_lg.png')
+      source(media='(min-width: 768px)', srcset='img/module-a_sm.png')
+      source(media='(min-width: 0)', srcset='img/module-a_xs.png')
+      img.main-top__img(
+        alt=`${appTitle}`,
+        src='img/module-a_xs.png',
+        loading='lazy')
