@@ -96,10 +96,48 @@
       align-items: flex-end;
       padding-bottom: 0;
     }
+
+    &__text-block {
+      padding: 0 40px;
+    }
   }
 }
 
 @media screen and (min-width: $screen-md) {
   .feature {
+    &__text-block {
+      padding: 0 50px;
+    }
+
+    &__text-wrapper {
+      max-width: 390px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .feature {
+    &__text-block {
+      padding: 0 120px;
+    }
+
+    &__text-wrapper {
+      &--odd {
+        margin-right: auto;
+      }
+
+      &--even {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $screen-lg) {
+  .feature {
+    &__text-block {
+      padding: 0 150px;
+    }
   }
 }

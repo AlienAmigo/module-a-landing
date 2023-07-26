@@ -15,7 +15,8 @@ block content
     each item, index in FeaturesData
       .feature
         .feature__text-block
-          .feature__text-wrapper
+          .feature__text-wrapper(
+            class=`${index % 2 !== 1 ? 'feature__text-wrapper--odd' : 'feature__text-wrapper--even'}`)
             img.feature__ico(src=`${item.ico}`, alt=`${item.title}`)
             h3.feature__title= item.title
             ul.feature__list
