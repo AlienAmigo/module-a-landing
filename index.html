@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>О программе</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230724001006">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230727000038">
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       
@@ -39,9 +39,117 @@
         </header>
         <section class="main-top">
           <div class="main-top__text-wrapper">
-            <h1 class="main-top__title">Модуль А</h1>
-            <p class="main-top__text">Приложение для управления проектами, для организации работы коллективов территориально распределенных сотрудников.</p>
-            <button class="download-btn" type="button">Скачать приложение</button>
+            <div class="main-top__text-block">
+              <h1 class="main-top__title">Модуль А</h1>
+              <p class="main-top__text">Приложение для управления проектами, для организации работы коллективов территориально распределенных сотрудников.</p>
+              <button class="download-btn" type="button">Скачать приложение</button>
+            </div>
+          </div>
+          <div class="main-top__img-wrapper">
+            <picture class="main-top__picture">
+              <source media="(min-width: 1280px)" srcset="img/module-a_lg.png">
+              <source media="(min-width: 768px)" srcset="img/module-a_sm.png">
+              <source media="(min-width: 0)" srcset="img/module-a_xs.png"><img class="main-top__img" alt="Модуль А" src="img/module-a_xs.png" loading="lazy">
+            </picture>
+          </div>
+        </section>
+        <section class="features">
+          <div class="feature">
+            <div class="feature__text-block">
+              <div class="feature__text-wrapper feature__text-wrapper--odd"><img class="feature__ico" src="img/manage_ico.svg" alt="Осуществление таск-менеджмента">
+                <h3 class="feature__title">Осуществление таск-менеджмента</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Создавать задачи с привязкой к территориям и адресам</li>
+                  <li class="feature__item">Представление задач в виде «Списка» или «Карточек задач»</li>
+                  <li class="feature__item">Гибкая настройка алгоритма выполнения работ Исполнителями при постановке задачи</li>
+                  <li class="feature__item">Автоматический сбор отчетов по результатам выполнения задач</li>
+                  <li class="feature__item">Представление задач на Карте</li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature__img-block  feature__img-block--odd">
+              <picture class="feature__picture">
+                <source srcset="img/manage_lg.png" media="(min-width: 1024px)">
+                <source srcset="img/manage_md.png" media="(min-width: 768px)">
+                <source srcset="img/manage_sm.png" media="(min-width: 600px)">
+                <source srcset="img/manage_xs.png" media="(min-width: 0)"><img class="feature__img" src="img/manage_xs.png" alt="Осуществление таск-менеджмента" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-block">
+              <div class="feature__text-wrapper feature__text-wrapper--even"><img class="feature__ico" src="img/territory_ico.svg" alt="Создание задач с привязкой к территориям и адресам">
+                <h3 class="feature__title">Создание задач с привязкой к территориям и адресам</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Гибкая настройка Маршрута выполнения задачи по адресам необходимой территории</li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature__img-block  feature__img-block--even">
+              <picture class="feature__picture">
+                <source srcset="img/territory_lg.png" media="(min-width: 1024px)">
+                <source srcset="img/territory_md.png" media="(min-width: 768px)">
+                <source srcset="img/territory_sm.png" media="(min-width: 600px)">
+                <source srcset="img/territory_xs.png" media="(min-width: 0)"><img class="feature__img" src="img/territory_xs.png" alt="Создание задач с привязкой к территориям и адресам" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-block">
+              <div class="feature__text-wrapper feature__text-wrapper--odd"><img class="feature__ico" src="img/map_ico.svg" alt="Отображение задач и результатов работ на картах">
+                <h3 class="feature__title">Отображение задач и результатов работ на картах</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Отображать на Карте целевые показатели задач, параметры территорий, промежуточные результаты выполнения задач.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature__img-block feature__img-block--xs-align-bottom feature__img-block--odd">
+              <picture class="feature__picture">
+                <source srcset="img/map_lg.png" media="(min-width: 1024px)">
+                <source srcset="img/map_md.png" media="(min-width: 768px)">
+                <source srcset="img/map_sm.png" media="(min-width: 600px)">
+                <source srcset="img/map_xs.png" media="(min-width: 0)"><img class="feature__img" src="img/map_xs.png" alt="Отображение задач и результатов работ на картах" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-block">
+              <div class="feature__text-wrapper feature__text-wrapper--even"><img class="feature__ico" src="img/questionnaire_ico.svg" alt="Проведение опросов любых типов, создание анкеты с помощью Конструктора анкет">
+                <h3 class="feature__title">Проведение опросов любых типов, создание анкеты с помощью Конструктора анкет</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">В МП ««Модуль А» доступен «Конструктор анкеты» опроса, с возможностью задания различных типов вопросов, произвольного алгоритма проведения опроса</li>
+                  <li class="feature__item">Автоматическое формирование Отчетов по результатам опроса в режиме онлайн</li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature__img-block feature__img-block--xs-align-bottom feature__img-block--even">
+              <picture class="feature__picture">
+                <source srcset="img/questionnaire_lg.png" media="(min-width: 1024px)">
+                <source srcset="img/questionnaire_md.png" media="(min-width: 768px)">
+                <source srcset="img/questionnaire_sm.png" media="(min-width: 600px)">
+                <source srcset="img/questionnaire_xs.png" media="(min-width: 0)"><img class="feature__img" src="img/questionnaire_xs.png" alt="Проведение опросов любых типов, создание анкеты с помощью Конструктора анкет" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__text-block">
+              <div class="feature__text-wrapper feature__text-wrapper--odd"><img class="feature__ico" src="img/map_ico.svg" alt="Обучение и тестирование сотрудников  внутри приложения">
+                <h3 class="feature__title">Обучение и тестирование сотрудников  внутри приложения</h3>
+                <ul class="feature__list">
+                  <li class="feature__item">Выставлять в «Модуль А» обучающие видео-материалы, инфографику, PDF-инструкции</li>
+                  <li class="feature__item">Таргетировать обучающие материалы под различные целевые аудитории сотрудников (учитывая их знания, навыки и опыт)</li>
+                  <li class="feature__item">Конструировать и запускать в приложении опросы в виде Тестов, с любой логикой движения пользователя внутри теста</li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature__img-block feature__img-block--xs-align-bottom feature__img-block--odd">
+              <picture class="feature__picture">
+                <source srcset="img/edu_lg.png" media="(min-width: 1024px)">
+                <source srcset="img/edu_md.png" media="(min-width: 768px)">
+                <source srcset="img/edu_sm.png" media="(min-width: 600px)">
+                <source srcset="img/edu_xs.png" media="(min-width: 0)"><img class="feature__img" src="img/edu_xs.png" alt="Обучение и тестирование сотрудников  внутри приложения" loading="lazy">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="main-bottom">
@@ -53,6 +161,6 @@
       <!--  block footer-->
       <!--    p Подвал-->
     </div>
-    <script src="js/script.min.js?_v=20230724001006"></script>
+    <script src="js/script.min.js?_v=20230727000038"></script>
   </body>
 </html>
